@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    tools:context=".AddNote">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titletextview"
+        android:text="ADD NEW NOTE"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleinput"
+            android:hint="Title"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_corner"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descinput"
+            android:hint="Description"
+            android:textSize="15sp"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_corner"
+            android:lines="10"
+            android:gravity="top"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/savebtn"
+        android:layout_alignParentBottom="true"
+        android:text="SAVE"
+        android:elevation="10sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:shadowColor="@color/black"
+        android:background="@drawable/edit_text_bg"
+        android:layout_margin="30dp"/>
+
+
+</LinearLayout>
